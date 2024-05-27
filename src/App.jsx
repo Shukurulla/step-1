@@ -11,7 +11,7 @@ import AboutDoctor from "./pages/about/aboutDoctor";
 
 function App() {
   const dispatch = useDispatch();
-  const { specialities } = useSelector((state) => state.speciality);
+  const { isLoading } = useSelector((state) => state.speciality);
 
   useEffect(() => {
     DoctorSerice.getDoctors(dispatch);

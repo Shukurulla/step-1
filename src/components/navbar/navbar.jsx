@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Shape from "../../../public/Shape.png";
-import { NavbarLogo } from "../../constants";
+import NavbarLogo from "../../../public/Logo.png";
 import { ButtonOutline } from "../../ui/ui";
 import "./navbar.css";
 
