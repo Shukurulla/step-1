@@ -32,3 +32,16 @@ export const InputForText = ({ htmlFor, setState, label }) => {
     </>
   );
 };
+
+export const Spinner = () => {
+  return (
+    <div className="spinner-box">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p className="text-center">
+        Server bepul bolganligi uchun biroz sekin ishlashi mumkin
+      </p>
+    </div>
+  );
+};

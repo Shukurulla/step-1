@@ -1,5 +1,5 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:5001";
+axios.defaults.baseURL = "https://step-1-server.onrender.com";
 
 export default axios;

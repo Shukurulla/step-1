@@ -37,3 +37,7 @@ a {
 .cursor-pointer {
   cursor: pointer;
 }
+i {
+  font-size: 20px;
+  cursor: pointer;
+}

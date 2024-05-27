@@ -21,3 +21,12 @@ footer {
 .auth-links ul {
   justify-content: end;
 }
+@media (max-width: 550px) {
+  .links li {
+    width: 300px;
+  }
+  .auth-links ul {
+    justify-content: start;
+    padding: 0;
+  }
+}

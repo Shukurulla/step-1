@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Shape from "../../../public/Shape.png";
 import { NavbarLogo } from "../../constants";
@@ -6,27 +6,29 @@ import { ButtonOutline } from "../../ui/ui";
 import "./navbar.css";
 
 const Navbar = () => {
+  const [active, setActive] = useState(false);
   return (
     <header>
       <nav className="container ">
         <div className="logo">
           <img src={NavbarLogo} alt="" />
         </div>
-        <div className="navigation">
-          <div className="nav-items">
+        <div className={`navigation`}>
+          <div className={`nav-items  ${active ? "active" : ""}`}>
             <ul>
-              <li>
+              <i className="bi bi-x-lg" onClick={() => setActive(false)}></i>
+              <li onClick={() => setActive(false)}>
                 <Link to={"/"}>Главная</Link>
               </li>
-              <li>
+              <li onClick={() => setActive(false)}>
                 <Link to={"/"}>Как пользоваться?</Link>
               </li>
-              <li>
+              <li onClick={() => setActive(false)}>
                 <Link to={"/"} className="active">
                   Запись к врачу
                 </Link>
               </li>
-              <li>
+              <li onClick={() => setActive(false)}>
                 <Link to={"/"}>Контакты</Link>
               </li>
             </ul>
@@ -37,6 +39,7 @@ const Navbar = () => {
               Войти
             </button>
             <ButtonOutline>Регистрация</ButtonOutline>
+            <i className="bi bi-list" onClick={() => setActive(true)}></i>
           </div>
         </div>
       </nav>

@@ -83,6 +83,7 @@ label {
   right: 20px;
   font-size: 20px;
   cursor: pointer;
+  display: block;
 }
 input[type="checkbox"] {
   width: 20px;
@@ -91,4 +92,26 @@ input[type="checkbox"] {
   accent-color: #42b2fc;
   color: #fff;
   border-radius: 2px;
+}
+@media (max-width: 1240px) {
+  .form-wrapper .form {
+    width: 50%;
+  }
+}
+@media (max-width: 900px) {
+  label {
+    margin-top: 10px;
+  }
+  .form-wrapper .form {
+    width: 60%;
+    padding: 20px;
+    font-size: 13px;
+  }
+  .form input,
+  textarea,
+  .code {
+    padding: 5px;
+  }
+  .form-wrapper .form button {
+  }
 }

@@ -9,23 +9,23 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-10 col-md-12">
-            <ul className="links p-0">
-              <li>
+            <ul className="row links p-0">
+              <li className="col">
                 <Link to="/">Главная</Link>
               </li>
-              <li>
+              <li className="col">
                 <Link to="/">Как пользоваться</Link>
               </li>
-              <li>
+              <li className="col">
                 <Link to="/">Политика конфиденциальности</Link>
               </li>
-              <li>
+              <li className="col">
                 <Link to="/">Условия использования</Link>
               </li>
-              <li>
+              <li className="col">
                 <Link to="/">Контакты</Link>
               </li>
-              <li>
+              <li className="col">
                 <Link to="/">
                   Еще <i className="bi bi-chevron-down"></i>
                 </Link>
