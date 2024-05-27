@@ -1,0 +1,13 @@
+.select-hour {
+  padding: 6px 18px;
+  background-color: #e1f1ff;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #edf4fa;
+  font-weight: 400;
+  color: #575757;
+}
+.select-hour.active {
+  background-color: #42b2fc;
+  color: #fff;
+}

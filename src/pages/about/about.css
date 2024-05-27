@@ -1,0 +1,12 @@
+.info-list {
+  margin: 10px 0;
+}
+.doc-image {
+  border-radius: 20px;
+  height: 300px;
+  overflow: hidden;
+}
+.doc-image img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+.outline-btn {
+  padding: 15px 25px;
+  background-color: #fff;
+  border: 1.5px solid #42b2fc;
+  border-radius: 8px;
+  color: #42b2fc;
+}
+.primary-button {
+  padding: 15px 25px;
+  background-color: #42b2fc;
+  border: 1.5px solid #42b2fc;
+  border-radius: 8px;
+  color: #fff;
+}
+.primary-button:disabled {
+  opacity: 0.5;
+}
